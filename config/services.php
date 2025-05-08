@@ -34,5 +34,14 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'unsplash' => [
+        'key' => env('UNSPLASH_API_KEY'),
+    ],
+    'pexels' => [
+        'key' => env('PEXELS_API_KEY'),
+    ],
+    'pixabay' => [
+        'key' => env('PIXABAY_API_KEY'),
+    ]
 
 ];

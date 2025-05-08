@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ImagesAPIController;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ImagesAPIController::class, 'index']);
+Route::get('/pexels', [ImagesAPIController::class, 'searchImages']);
