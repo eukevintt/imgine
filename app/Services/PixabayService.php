@@ -6,12 +6,13 @@ use Illuminate\Support\Facades\Http;
 
 class PixabayService
 {
-    public function search(string $query, int $limit = 10)
+    public function search(string $query, int $limit = 10, int $page = 1)
     {
         $response = Http::get('https://pixabay.com/api/', [
             'key' => config('services.pixabay.key'),
             'q' => $query,
             'per_page' => $limit,
+            'page' => $page,
         ]);
 
         if ($response->successful()) {

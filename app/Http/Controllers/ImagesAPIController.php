@@ -21,13 +21,14 @@ class ImagesAPIController extends Controller
     public function searchImages(Request $request)
     {
         $query = $request->query('query');
+        $page = $request->query('page', 1);
 
-        $pexels = app(PexelsService::class)->search($query);
-        $unsplash = app(UnsplashService::class)->search($query);
-        $pixabay = app(PixabayService::class)->search($query);
+        $pexels = app(PexelsService::class)->search($query, $page);
+        $unsplash = app(UnsplashService::class)->search($query, $page);
+        $pixabay = app(PixabayService::class)->search($query, $page);
 
         $images = array_merge($pexels, $unsplash, $pixabay);
 
-        return response()->json($images);
+        return view('images', compact('images'));
     }
 }

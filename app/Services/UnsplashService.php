@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 class UnsplashService
 {
-    public function search(string $query, int $limit = 10)
+    public function search(string $query, int $limit = 10, int $page = 1)
     {
         $key = 'Client-ID ' . config('services.unsplash.key');
 
@@ -16,6 +16,7 @@ class UnsplashService
         ])->get('https://api.unsplash.com/search/photos', [
             'query' => $query,
             'per_page' => $limit,
+            'page' => $page,
         ]);
 
 
