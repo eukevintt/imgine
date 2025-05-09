@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 
@@ -11,7 +13,21 @@
 @plugin "flowbite/plugin";
 
 @theme {
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+    --font-sans: "Roboto", "DM Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+
+    --color-primary: #4a90e2;
+    --color-secondary: #fff9c4;
+    --color-color-text: #263238;
+    --color-color-secondary: #b0bec5;
+    --color-background-primary: #fafafa;
+}
+
+.font-ui {
+    font-family: "DM Sans", sans-serif;
+}
+
+.font-text {
+    font-family: "Roboto", sans-serif;
 }

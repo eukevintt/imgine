@@ -9,7 +9,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-background-primary">
+
+    <x-navbar />
 
     {{ $slot }}
 
