@@ -20,6 +20,7 @@ class ImagesAPIController extends Controller
 
     public function searchImages(Request $request)
     {
+
         $query = $request->query('query');
         $page = $request->query('page', 1);
 

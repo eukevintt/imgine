@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 class PexelsService
 {
-    public function search(string $query, int $limit = 10, int $page = 1)
+    public function search(string $query, int $page = 1, int $limit = 10)
     {
         $response = Http::withHeaders([
             'Authorization' => config('services.pexels.key'),

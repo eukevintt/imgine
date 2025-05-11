@@ -1,6 +1,6 @@
 <nav class="bg-white border-b border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo-padrao.png') }}" class="w-20 h-20" alt="Flowbite Logo" />
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -30,15 +30,16 @@
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">About</a>
+                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">Gerar
+                        com IA</a>
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">About</a>
+                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">Sobre</a>
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">About</a>
+                        class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 ">Contato</a>
                 </li>
             </ul>
         </div>
