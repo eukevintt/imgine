@@ -15,7 +15,18 @@ class ImagesAPIController extends Controller
 
     public function index()
     {
-        return view('dashboard');
+        $response = Http::withHeaders(
+            [
+                'Authorization' => config('services.pexels.key'),
+            ]
+        )->get('https://api.pexels.com/v1/curated', [
+            'per_page' => 15,
+            'page' => 1
+        ]);
+
+        $curated_photos = $response->json()['photos'];
+
+        return view('dashboard', compact('curated_photos'));
     }
 
     public function searchImages(Request $request)

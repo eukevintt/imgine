@@ -12,4 +12,5 @@ return [
     'message_footer' => 'Discover, search and create images, all in one place.',
     'privacy_policy' => 'Privacy Policy',
     'terms_of_service' => 'Terms of Service',
+    'curated_title' => 'Trending Photos',
 ];

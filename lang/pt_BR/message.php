@@ -12,4 +12,5 @@ return [
     'message_footer' => 'Descubra, pesquise e crie imagens, tudo em um só lugar.',
     'privacy_policy' => 'Política de Privacidade',
     'terms_of_service' => 'Termos de Serviço',
+    'curated_title' => 'Fotos em alta',
 ];
