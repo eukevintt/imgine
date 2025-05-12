@@ -37,8 +37,10 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             @foreach ($curated_photos as $photo)
                 <div class="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                    <img src="{{ $photo['image'] }}" alt="{{ $photo['alt'] ?? 'Image' }}"
-                        class="w-full h-full object-cover">
+                    <a href="{{ route('images.show', ['database' => $photo['source'], 'id' => $photo['id']]) }}">
+                        <img src="{{ $photo['image'] }}" alt="{{ $photo['alt'] ?? 'Image' }}"
+                            class="w-full h-full object-cover">
+                    </a>
                 </div>
             @endforeach
         </div>

@@ -8,7 +8,8 @@
         <div class="flex flex-col justify-center">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ $image['author'] }}</h2>
             <a href="{{ $image['author_url'] }}" target="_blank"
-                class="text-primary hover:underline text-sm mb-6 hover:text-primary-200">{{ __('message.author_profile') }}</a>
+                class="inline-block w-fit text-primary hover:underline text-sm mb-6 hover:text-primary-200">{{ __('message.author_profile') }}</a>
+
             <span class="text-gray-700 text-base mb-6">
                 {{ __('message.image_url') }} <a href="{{ $image['url'] }}"
                     class="color text-primary hover:underline hover:text-primary-200"

@@ -1,11 +1,10 @@
 <nav class="bg-white border-b border-gray-200 fixed top-0 left-0 w-full z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <!-- Logo + Mobile toggle in one row -->
         <div class="flex items-center justify-between w-full md:w-auto">
             <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('images/logo-padrao.png') }}" class="w-20 h-20" alt="Imgine Logo" />
             </a>
-            <!-- Mobile hamburger icon -->
+
             <button data-collapse-toggle="navbar-cta" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-cta" aria-expanded="false">
@@ -17,7 +16,6 @@
             </button>
         </div>
 
-        <!-- Search -->
         <div class="flex items-center gap-2 flex-grow max-w-xl mx-auto px-4">
             <form action="{{ route('images.search') }}" method="GET" class="relative flex flex-grow">
                 <input type="text" name="query" value="{{ request('query') }}"
@@ -35,7 +33,6 @@
             </form>
         </div>
 
-        <!-- Desktop buttons -->
         <div class="hidden pt-5 md:pt-0 md:flex items-center space-x-6" id="navbar-cta">
             <ul class="flex flex-col md:flex-row font-medium space-y-2 md:space-y-0 md:space-x-6">
                 <li>
@@ -44,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-primary hover:underline hover:underline-offset-4">
+                    <a href="{{ route('about') }}" class="text-primary hover:underline hover:underline-offset-4">
                         {{ __('message.about') }}
                     </a>
                 </li>

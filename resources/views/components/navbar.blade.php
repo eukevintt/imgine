@@ -32,7 +32,7 @@
                         class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 md:hover:underline md:hover:underline-offset-4">{{ __('message.generate') }}</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{{ route('about') }}"
                         class="block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-primary dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 md:hover:underline md:hover:underline-offset-4">{{ __('message.about') }}</a>
                 </li>
                 <li>

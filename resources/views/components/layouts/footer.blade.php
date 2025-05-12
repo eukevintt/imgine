@@ -20,7 +20,7 @@
                             <a href="" class="hover:underline">{{ __('message.generate') }}</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="hover:underline">{{ __('message.about') }}</a>
+                            <a href="{{ route('about') }}" class="hover:underline">{{ __('message.about') }}</a>
                         </li>
                         <li>
                             <a href="" class="hover:underline">{{ __('message.contact') }}</a>
@@ -32,7 +32,7 @@
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-2">
                             <a href="https://github.com/eukevintt/imgine" target="_blank"
-                                class="hover:underline ">Github</a>
+                                class="hover:underline">Github</a>
                         </li>
                         <li>
                             <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Donations</a>
