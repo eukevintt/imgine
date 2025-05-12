@@ -25,4 +25,9 @@ class MainController extends Controller
     {
         return view('legal.terms-of-service');
     }
+
+    public function donations()
+    {
+        return view('donations');
+    }
 }

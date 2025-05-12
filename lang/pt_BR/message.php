@@ -84,4 +84,9 @@ return [
 
     'terms_seven' => '7. Contact',
     'terms_seven_text' => 'Em caso de dúvidas, entre em contato com o criador por meio das redes sociais ou através do',
+
+    'donations_title' => 'Doações',
+    'donations_description' => 'Se você acredita na proposta do Imgine e quer contribuir para a continuidade e evolução da plataforma, considere realizar uma doação. Mesmo pequenas quantias ajudam a cobrir os custos de infraestrutura e manutenção do projeto, que é mantido de forma independente.',
+    'donations_future' => 'Em breve, adicionaremos outras formas de apoio, como pagamentos por cartão via Stripe e plataformas populares de contribuição.',
+
 ];

@@ -1,4 +1,4 @@
-<x-layouts.layout>
+<x-layouts.layout title="{{ request('query') }} - Imgine">
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-4">
         @foreach ($images as $image)
             <div

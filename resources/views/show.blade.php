@@ -1,4 +1,4 @@
-<x-layouts.layout>
+<x-layouts.layout title="{{ $image['author'] }} - Imgine">
     <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
             <img src="{{ $image['source'] === 'pexels' ? $image['image_large2x'] : ($image['source'] === 'unsplash' ? $image['image_regular'] : $image['image_large']) }}"

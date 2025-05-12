@@ -76,4 +76,9 @@ return [
 
     'terms_seven' => '7. Contact',
     'terms_seven_text' => 'If you have any questions, please contact creator through social media or the',
+
+    'donations_title' => 'Donations',
+    'donations_description' => 'If you believe in Imgine’s mission and would like to support its growth and sustainability, consider making a donation. Even small contributions help cover infrastructure and maintenance costs for this independently run project.',
+    'donations_future' => 'Soon, we will add more support options such as credit card payments via Stripe and other popular donation platforms.',
+
 ];

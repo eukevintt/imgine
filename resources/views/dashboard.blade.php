@@ -1,4 +1,4 @@
-<x-layouts.layout>
+<x-layouts.layout title="Home - Imgine">
 
     <div class="flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-8 text-center space-y-8">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">

@@ -1,4 +1,4 @@
-<x-layouts.layout>
+<x-layouts.layout title="Contact - Imgine">
     <section class="min-h-screen bg-background-primary flex flex-col items-center justify-center px-4 py-16">
         <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10 text-center">Contact</h1>
 
