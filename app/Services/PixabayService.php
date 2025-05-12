@@ -16,15 +16,18 @@ class PixabayService
         ]);
 
         if ($response->successful()) {
-            return collect($response->json()['hits'])->map(function ($item) {
-                return [
-                    'source' => 'pixabay',
-                    'id'     => $item['id'],
-                    'url'    => $item['pageURL'],
-                    'image'  => $item['webformatURL'],
-                    'author' => $item['user'],
-                ];
-            })->toArray();
+            return [
+                'data' => collect($response->json()['hits'])->map(function ($item) {
+                    return [
+                        'source' => 'pixabay',
+                        'id'     => $item['id'],
+                        'url'    => $item['pageURL'],
+                        'image'  => $item['webformatURL'],
+                        'author' => $item['user'],
+                    ];
+                })->toArray(),
+                'total' => $response->json()['totalHits'] ?? 0
+            ];
         }
 
         return [];

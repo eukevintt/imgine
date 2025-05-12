@@ -28,9 +28,10 @@ class UnsplashService
                         'url'    => $item['links']['html'],
                         'image'  => $item['urls']['full'],
                         'author' => $item['user']['name'],
+                        'alt' => $item['description'],
                     ];
                 })->toArray(),
-                'total' => $json['total']
+                'total' => $json['total'] ?? 0
             ];
         }
 

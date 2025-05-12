@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\GetImageService;
 use App\Services\PexelsService;
 use App\Services\UnsplashService;
 use App\Services\PixabayService;
@@ -70,12 +71,12 @@ class ImagesAPIController extends Controller
         $imagesArray = array_merge(
             $pexels['data'] ?? [],
             $unsplash['data'] ?? [],
-            $pixabay
+            $pixabay['data'] ?? []
         );
 
         $collection = collect($imagesArray);
 
-        $totalResults = $pexels['total'] + $unsplash['total'];
+        $totalResults = ($pexels['total'] ?? 0) + ($unsplash['total'] ?? 0) + ($pixabay['total'] ?? 0);
 
         $paginatedImages = new LengthAwarePaginator(
             $collection,
@@ -86,5 +87,12 @@ class ImagesAPIController extends Controller
         );
 
         return view('images', ['images' => $paginatedImages]);
+    }
+
+    public function show($database, $id)
+    {
+        $image = app(GetImageService::class)->getImage($database, $id);
+
+        return view('show', ['image' => $image]);
     }
 }

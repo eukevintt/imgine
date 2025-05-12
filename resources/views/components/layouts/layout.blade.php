@@ -11,7 +11,7 @@
 
 <body class="bg-background-primary">
 
-    @if (request()->routeIs('images.search'))
+    @if (request()->routeIs('images.search') || request()->routeIs('images.show'))
         <x-navbar-images />
         <div class="pt-32">
             {{ $slot }}

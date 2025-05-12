@@ -3,7 +3,9 @@
         @foreach ($images as $image)
             <div
                 class="break-inside-avoid rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="{{ $image['image'] }}" alt="" class="w-full h-auto rounded-lg">
+                <a href="{{ route('images.show', ['database' => $image['source'], 'id' => $image['id']]) }}">
+                    <img src="{{ $image['image'] }}" alt="{{ $image['alt'] ?? '' }}" class="w-full h-auto rounded-lg">
+                </a>
             </div>
         @endforeach
     </div>

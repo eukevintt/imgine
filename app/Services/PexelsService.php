@@ -26,6 +26,7 @@ class PexelsService
                         'url'    => $item['url'],
                         'image'  => $item['src']['large2x'],
                         'author' => $item['photographer'],
+                        'alt' => $item['alt'],
                     ];
                 })->toArray(),
                 'total' => $json['total_results']
