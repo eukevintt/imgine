@@ -10,4 +10,19 @@ class MainController extends Controller
     {
         return view('about');
     }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('legal.privacy-policy');
+    }
+
+    public function termsOfService()
+    {
+        return view('legal.terms-of-service');
+    }
 }

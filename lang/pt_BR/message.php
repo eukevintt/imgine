@@ -34,4 +34,29 @@ return [
     'donation' => 'página de doações',
     'support_two' => 'Caso saiba programar com Laravel, Blade ou Tailwind CSS, fique à vontade para colaborar no repositório do :github.',
 
+
+    'privacy_policy' => 'Política de Privacidade',
+    'privacy_policy_text' => 'Esta Política de Privacidade descreve como as informações são coletadas, utilizadas e protegidas no site Imgine.',
+
+    'information_collection' => '1. Coleta de informações',
+    'information_collection_text' => 'O Imgine não coleta dados pessoais identificáveis de forma automática. Ao utilizar o site, informações não pessoais como tipo de navegador, sistema operacional, páginas acessadas e termos pesquisados podem ser registradas para fins estatísticos e de melhoria da plataforma.',
+
+    'use_of_third_party' => '2. Utilização de APIs de terceiros',
+    'use_of_third_party_text' => 'O Imgine utiliza APIs públicas de terceiros, como Pexels, Unsplash e Pixabay, para exibir resultados de imagem. Essas plataformas possuem suas próprias políticas de privacidade e termos de uso, e o Imgine não se responsabiliza por conteúdo, cookies ou práticas adotadas por essas APIs externas.',
+
+    'cookies' => '3. Cookies',
+    'cookies_text' => 'Atualmente, o Imgine não utiliza cookies próprios para rastreamento. No entanto, provedores externos integrados ao site (como provedores de doação, hospedagem de imagens ou ferramentas analíticas) podem utilizar cookies de acordo com suas próprias políticas.',
+
+    'donations_financial_data' => '4. Doações e dados financeiros',
+    'donations_financial_data_text' => 'Caso você opte por realizar uma doação, o processamento será feito através de plataformas externas e seguras como Stripe ou outros gateways. O Imgine não armazena dados bancários ou financeiros dos usuários.',
+
+    'security' => '5. Segurança',
+    'security_text' => 'O site é protegido com práticas básicas de segurança, e nenhum dado sensível é coletado ou armazenado localmente sem consentimento. Todo acesso é criptografado via HTTPS.',
+
+    'changes_policy' => '6. Alterações nesta política',
+    'changes_policy_text' => 'Esta Política de Privacidade pode ser atualizada ocasionalmente. A versão mais recente estará sempre disponível nesta página.',
+
+    'contact_info' => '7. Contato',
+    'contact_info_text' => 'Em caso de dúvidas sobre esta política ou o uso de dados, entre em contato com o responsável pelo projeto — através das redes sociais ou do',
+    'contact_form' => 'formulário de contato',
 ];

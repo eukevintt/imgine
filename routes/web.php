@@ -9,9 +9,9 @@ Route::get('/', [ImagesAPIController::class, 'index'])->name('home');
 Route::get('/search-images', [ImagesAPIController::class, 'searchImages'])->name('images.search');
 Route::get('show/{database}/{id}', [ImagesAPIController::class, 'show'])->name('images.show');
 Route::post('download/{database}', [ImagesAPIController::class, 'download'])->name('image.download');
-Route::get('/generate');
+Route::get('/generate', [ImagesAPIController::class, 'generate'])->name('images.generate');
 
 Route::get('/about', [MainController::class, 'about'])->name('about');
-Route::get('/contact');
-Route::get('/privacy-policy');
-Route::get('/terms-of-service');
+Route::get('/contact', [MainController::class, 'contact'])->name('contact');
+Route::get('/privacy-policy', [MainController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/terms-of-service', [MainController::class, 'termsOfService'])->name('terms-of-service');

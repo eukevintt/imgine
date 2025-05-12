@@ -2,7 +2,8 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div class="flex items-center justify-between w-full md:w-auto">
             <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="{{ asset('images/logo-padrao.png') }}" class="w-20 h-20" alt="Imgine Logo" />
+                <img src="{{ asset('images/logo-padrao.png') }}"
+                    class="w-20 h-20 hover:-translate-y-1 hover:rotate-10 duration-400 transition" alt="Imgine Logo" />
             </a>
 
             <button data-collapse-toggle="navbar-cta" type="button"
@@ -36,17 +37,20 @@
         <div class="hidden pt-5 md:pt-0 md:flex items-center space-x-6" id="navbar-cta">
             <ul class="flex flex-col md:flex-row font-medium space-y-2 md:space-y-0 md:space-x-6">
                 <li>
-                    <a href="#" class="text-primary hover:underline hover:underline-offset-4">
+                    <a href="{{ route('images.generate') }}"
+                        class="text-primary {{ request()->is('images.generate') ? 'underline underline-offset-4' : 'hover:underline hover:underline-offset-4' }}">
                         {{ __('message.generate') }}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('about') }}" class="text-primary hover:underline hover:underline-offset-4">
+                    <a href="{{ route('about') }}"
+                        class="text-primary {{ request()->is('about') ? 'underline underline-offset-4' : 'hover:underline hover:underline-offset-4' }}">
                         {{ __('message.about') }}
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-primary hover:underline hover:underline-offset-4">
+                    <a href="{{ route('contact') }}"
+                        class="text-primary {{ request()->is('contact') ? 'underline underline-offset-4' : 'hover:underline hover:underline-offset-4' }}">
                         {{ __('message.contact') }}
                     </a>
                 </li>

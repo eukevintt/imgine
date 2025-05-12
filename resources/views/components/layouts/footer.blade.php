@@ -2,7 +2,10 @@
     <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:py-8">
         <div class="md:flex flex-col md:flex-row md:justify-between items-center">
             <div class="mb-9 md:mb-0 max-w-60 flex flex-col items-center">
-                <img src="{{ asset('images/avatar-metade-branco.png') }}" alt="Logo" class="w-25 h-25 block mb-2" />
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/avatar-metade-branco.png') }}" alt="Logo"
+                        class="w-25 h-25 block mb-2 hover:rotate-10 duration-400 transition" />
+                </a>
 
                 <p class="text-center font-normal text-base mt-0 leading-tight text-white">
                     {{ __('message.message_footer') }}
@@ -43,10 +46,12 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-2">
-                            <a href="#" class="hover:underline">{{ __('message.privacy_policy') }}</a>
+                            <a href="{{ route('privacy-policy') }}"
+                                class="hover:underline">{{ __('message.privacy_policy') }}</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">{{ __('message.terms_of_service') }}</a>
+                            <a href="{{ route('terms-of-service') }}"
+                                class="hover:underline">{{ __('message.terms_of_service') }}</a>
                         </li>
                     </ul>
                 </div>
