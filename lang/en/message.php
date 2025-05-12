@@ -13,4 +13,13 @@ return [
     'privacy_policy' => 'Privacy Policy',
     'terms_of_service' => 'Terms of Service',
     'curated_title' => 'Trending Photos',
+    'download' => 'Free Download',
+    'author_profile' => 'View Author Profile',
+    'image_url' => 'This image is from the website',
+    'large' => 'Large',
+    'medium' => 'Medium',
+    'small' => 'Small',
+    'portrait' => 'Portrait',
+    'landscape' => 'Landscape',
+    'tiny' => 'Tiny',
 ];

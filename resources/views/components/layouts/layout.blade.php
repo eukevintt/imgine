@@ -9,11 +9,11 @@
     <title>Document</title>
 </head>
 
-<body class="bg-background-primary">
+<body class="bg-background-primary min-h-screen flex flex-col">
 
     @if (request()->routeIs('images.search') || request()->routeIs('images.show'))
         <x-navbar-images />
-        <div class="pt-32">
+        <div class="pt-32 flex-grow">
             {{ $slot }}
         </div>
     @else

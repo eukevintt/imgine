@@ -13,6 +13,7 @@ class GetImageService
                 'Authorization' => config('services.pexels.key'),
             ])->get('https://api.pexels.com/v1/photos/' . $id);
 
+
             if ($response->successful()) {
                 $photo = $response->json();
 

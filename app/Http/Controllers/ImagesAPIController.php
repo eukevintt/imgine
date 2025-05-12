@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Http;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use PHPUnit\Event\Runtime\PHP;
 
 class ImagesAPIController extends Controller
 {
@@ -59,7 +60,6 @@ class ImagesAPIController extends Controller
 
     public function searchImages(Request $request)
     {
-
         $query = $request->query('query');
         $page = $request->query('page', 1);
         $perPage = 15;
@@ -94,5 +94,21 @@ class ImagesAPIController extends Controller
         $image = app(GetImageService::class)->getImage($database, $id);
 
         return view('show', ['image' => $image]);
+    }
+
+    public function download($database, Request $request)
+    {
+        $url = $request->input('url');
+
+        $content = file_get_contents($url);
+        $filename = basename(parse_url($url, PHP_URL_PATH)) ?: 'image.jpg';
+
+        if (!preg_match('/\.(jpe?g|png|gif|webp)$/i', $filename)) {
+            $filename .= '.jpg';
+        }
+
+        return response($content)
+            ->header('Content-Type', 'image/jpeg')
+            ->header('Content-Disposition', 'attachment; filename="' . $filename . '"');
     }
 }

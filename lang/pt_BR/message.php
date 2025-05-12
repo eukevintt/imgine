@@ -13,4 +13,13 @@ return [
     'privacy_policy' => 'Política de Privacidade',
     'terms_of_service' => 'Termos de Serviço',
     'curated_title' => 'Fotos em alta',
+    'download' => 'Baixe Grátis',
+    'author_profile' => 'Ver perfil do autor',
+    'image_url' => 'Esta imagem é do site',
+    'large' => 'Grande',
+    'medium' => 'Médio',
+    'small' => 'Pequeno',
+    'portrait' => 'Retrato',
+    'landscape' => 'Paisagem',
+    'tiny' => 'Minúsculo',
 ];
