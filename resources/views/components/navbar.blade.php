@@ -5,8 +5,8 @@
                 class="w-20 h-20 hover:-translate-y-1 hover:rotate-3 duration-300 transition" alt="Flowbite Logo" />
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button"
-                class="text-white bg-primary duration-300 transition hover:bg-primary-200 font-semibold rounded-lg text-sm px-4 py-2 text-center cursor-pointer hover:scale-110 font-ui">{{ __('message.get_started') }}</button>
+            <a href="{{ route('get-started') }}"
+                class="text-white bg-primary duration-300 transition hover:bg-primary-200 font-semibold rounded-lg text-sm px-4 py-2 text-center cursor-pointer hover:scale-110 font-ui">{{ __('message.get_started') }}</a>
 
             <button data-collapse-toggle="navbar-cta" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

@@ -19,3 +19,5 @@ Route::post('/contact', [MainController::class, 'contactSubmit'])->name('contact
 Route::get('/privacy-policy', [MainController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-service', [MainController::class, 'termsOfService'])->name('terms-of-service');
 Route::get('/donations', [MainController::class, 'donations'])->name('donations');
+
+Route::get('/get-started', [MainController::class, 'getStarted'])->name('get-started');

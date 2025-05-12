@@ -45,4 +45,9 @@ class MainController extends Controller
     {
         return view('donations');
     }
+
+    public function getStarted()
+    {
+        return view('config.coming-soon');
+    }
 }

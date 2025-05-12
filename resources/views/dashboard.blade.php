@@ -24,7 +24,7 @@
 
         </form>
 
-        <a href=""
+        <a href="{{ route('images.generate') }}"
             class="mt-4 px-6 py-3 bg-primary text-white rounded-xl font-medium duration-300 hover:bg-primary-200 transition">
             {{ __('message.generate') }}
         </a>

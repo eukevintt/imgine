@@ -111,4 +111,9 @@ class ImagesAPIController extends Controller
             ->header('Content-Type', 'image/jpeg')
             ->header('Content-Disposition', 'attachment; filename="' . $filename . '"');
     }
+
+    public function generate()
+    {
+        return view('config.coming-soon');
+    }
 }

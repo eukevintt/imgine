@@ -55,10 +55,10 @@
                     </a>
                 </li>
             </ul>
-            <button type="button"
+            <a href="{{ route('get-started') }}"
                 class="text-white bg-primary duration-300 transition hover:bg-primary-200 font-semibold rounded-lg text-sm px-4 py-2 text-center cursor-pointer hover:scale-110 font-ui mt-4 md:mt-0">
                 {{ __('message.get_started') }}
-            </button>
+            </a>
         </div>
     </div>
 </nav>

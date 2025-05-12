@@ -81,4 +81,6 @@ return [
     'donations_description' => 'If you believe in Imgine’s mission and would like to support its growth and sustainability, consider making a donation. Even small contributions help cover infrastructure and maintenance costs for this independently run project.',
     'donations_future' => 'Soon, we will add more support options such as credit card payments via Stripe and other popular donation platforms.',
 
+    'coming_soon' => 'Coming soon',
+    'coming_description' => 'This feature is not yet available but is coming soon.',
 ];
