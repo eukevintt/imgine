@@ -1,5 +1,5 @@
 <x-layouts.layout>
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 ">
         <div class="max-w-3xl mx-auto">
             <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ __('message.privacy_policy') }}</h1>
 

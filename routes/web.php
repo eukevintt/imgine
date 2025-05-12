@@ -15,3 +15,4 @@ Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
 Route::get('/privacy-policy', [MainController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-service', [MainController::class, 'termsOfService'])->name('terms-of-service');
+Route::get('/donations', [MainController::class, 'donations'])->name('donations');

@@ -51,4 +51,29 @@ return [
     'contact_info' => '7. Contact',
     'contact_info_text' => 'If you have any questions about this policy or how data is handled, please contact the project creator through social media or the',
     'contact_form' => 'contact form',
+
+
+    'terms_of_service' => 'Terms of Service',
+    'terms_subtitle' => 'By using Imgine, you agree to the terms outlined below. If you do not agree with these terms, we recommend that you do not use the service.',
+
+    'terms_one' => '1. Platform Usage',
+    'terms_one_text' => 'Imgine is a free platform that allows image search and generation through public APIs and AI models. It can be used for personal, academic, and creative purposes, as long as the usage complies with the policies of the integrated image sources.',
+
+    'terms_two' => '2. Usage Limitations',
+    'terms_two_text' => 'Free access may include daily limits to ensure platform stability. Any attempt at automated usage, scraping, or abuse of resources may result in temporary or permanent blocking.',
+
+    'terms_three' => '3. Copyright and Licensing',
+    'terms_three_text' => 'All images are provided by sources such as Pexels, Unsplash, and Pixabay, which offer content under their own licenses. Imgine merely relays this content and does not claim ownership over any image displayed.',
+
+    'terms_four' => '4. Contributions',
+    'terms_four_text' => 'The project is open source and maintained by a single developer. Contributions through GitHub are welcome as long as they follow best practices and do not compromise system integrity.',
+
+    'terms_five' => '5. Donations',
+    'terms_five_text' => 'Donations are optional and used exclusively to support hosting and infrastructure costs. No additional features are guaranteed to donors, except public recognition if permitted.',
+
+    'terms_six' => '6. Changes to Terms',
+    'terms_six_text' => 'The Terms of Service may be updated at any time without prior notice. We recommend checking this page regularly.',
+
+    'terms_seven' => '7. Contact',
+    'terms_seven_text' => 'If you have any questions, please contact creator through social media or the',
 ];

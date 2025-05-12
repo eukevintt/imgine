@@ -20,13 +20,14 @@
                             <a href="{{ route('home') }}" class="hover:underline">Home</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="hover:underline">{{ __('message.generate') }}</a>
+                            <a href="{{ route('images.generate') }}"
+                                class="hover:underline">{{ __('message.generate') }}</a>
                         </li>
                         <li class="mb-2">
                             <a href="{{ route('about') }}" class="hover:underline">{{ __('message.about') }}</a>
                         </li>
                         <li>
-                            <a href="" class="hover:underline">{{ __('message.contact') }}</a>
+                            <a href="{{ route('contact') }}" class="hover:underline">{{ __('message.contact') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +39,7 @@
                                 class="hover:underline">Github</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Donations</a>
+                            <a href="{{ route('donations') }}" class="hover:underline">Donations</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +60,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-center">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/"
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="{{ route('home') }}"
                     class="hover:underline">Imgine™</a>. All Rights Reserved.
             </span>
         </div>
