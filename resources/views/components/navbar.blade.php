@@ -25,7 +25,7 @@
                 class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row dark:bg-gray-900 md:dark:bg-transparent md:border-0">
                 <li>
                     <a href="{{ route('home') }}"
-                        class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-primary {{ request()->is('home') ? 'underline underline-offset-4' : 'hover:underline hover:underline-offset-4' }}"
+                        class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-primary {{ request()->is('/') ? 'underline underline-offset-4' : 'hover:underline hover:underline-offset-4' }}"
                         aria-current="page">Home</a>
                 </li>
                 <li>

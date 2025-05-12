@@ -12,7 +12,10 @@ Route::post('download/{database}', [ImagesAPIController::class, 'download'])->na
 Route::get('/generate', [ImagesAPIController::class, 'generate'])->name('images.generate');
 
 Route::get('/about', [MainController::class, 'about'])->name('about');
+
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
+Route::post('/contact', [MainController::class, 'contactSubmit'])->name('contact.submit');
+
 Route::get('/privacy-policy', [MainController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-service', [MainController::class, 'termsOfService'])->name('terms-of-service');
 Route::get('/donations', [MainController::class, 'donations'])->name('donations');
