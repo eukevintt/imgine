@@ -17,15 +17,19 @@ class PexelsService
         ]);
 
         if ($response->successful()) {
-            return collect($response->json()['photos'])->map(function ($item) {
-                return [
-                    'source' => 'pexels',
-                    'id'     => $item['id'],
-                    'url'    => $item['url'],
-                    'image'  => $item['src']['medium'],
-                    'author' => $item['photographer'],
-                ];
-            })->toArray();
+            $json = $response->json();
+            return [
+                'data' => collect($response->json()['photos'])->map(function ($item) {
+                    return [
+                        'source' => 'pexels',
+                        'id'     => $item['id'],
+                        'url'    => $item['url'],
+                        'image'  => $item['src']['large2x'],
+                        'author' => $item['photographer'],
+                    ];
+                })->toArray(),
+                'total' => $json['total_results']
+            ];
         }
 
         return [];

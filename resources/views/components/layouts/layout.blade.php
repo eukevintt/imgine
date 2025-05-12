@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,19 @@
 
 <body class="bg-background-primary">
 
-    <x-navbar />
+    @if (request()->routeIs('images.search'))
+        <x-navbar-images />
+        <div class="pt-32">
+            {{ $slot }}
+        </div>
+    @else
+        <x-navbar />
 
-    {{ $slot }}
+        {{ $slot }}
+    @endif
 
     <x-layouts.footer />
+
 
     @vite('resources/js/app.js')
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>

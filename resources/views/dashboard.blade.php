@@ -6,7 +6,7 @@
         </h1>
 
         <form action="{{ route('images.search') }}" method="get"
-            class="w-full max-w-xl flex items-center rounded-xl bg-gray-100 px-4 py-2 shadow-sm">
+            class="w-full max-w-xl flex items-center rounded-xl bg-gray-100 px-4 py-2 shadow-sm hover:scale-105 transition-transform duration-300">
             <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,7 +37,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             @foreach ($curated_photos as $photo)
                 <div class="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                    <img src="{{ $photo['src']['large2x'] }}" alt="{{ $photo['alt'] ?? 'Image' }}"
+                    <img src="{{ $photo['image'] }}" alt="{{ $photo['alt'] ?? 'Image' }}"
                         class="w-full h-full object-cover">
                 </div>
             @endforeach

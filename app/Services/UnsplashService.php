@@ -10,7 +10,6 @@ class UnsplashService
     {
         $key = 'Client-ID ' . config('services.unsplash.key');
 
-
         $response = Http::withHeaders([
             'Authorization' => $key,
         ])->get('https://api.unsplash.com/search/photos', [
@@ -19,20 +18,23 @@ class UnsplashService
             'page' => $page,
         ]);
 
-
-
         if ($response->successful()) {
-
-            return collect($response->json()['results'])->map(function ($item) {
-                return [
-                    'source' => 'unsplash',
-                    'id'     => $item['id'],
-                    'url'    => $item['links']['html'],
-                    'image'  => $item['urls']['regular'],
-                    'author' => $item['user']['name'],
-                ];
-            })->toArray();
+            $json = $response->json();
+            return [
+                'data' => collect($response->json()['results'])->map(function ($item) {
+                    return [
+                        'source' => 'unsplash',
+                        'id'     => $item['id'],
+                        'url'    => $item['links']['html'],
+                        'image'  => $item['urls']['full'],
+                        'author' => $item['user']['name'],
+                    ];
+                })->toArray(),
+                'total' => $json['total']
+            ];
         }
+
+
 
         return [];
     }
