@@ -10,17 +10,11 @@
 
 ## 📸 Demonstração
 
-### 🇧🇷 Prints
+### Prints // Screenshots
 
 ![Captura de tela - Home](screenshots/home.png)
 ![Captura de tela - Busca](screenshots/search.png)
 ![Captura de tela - Tela de Download](screenshots/download.png)
-
-### 🇺🇸 Screenshots
-
-![Screenshot - Home](screenshots/home.png)
-![Screenshot - Search](screenshots/search.png)
-![Screenshot - Download Interface](screenshots/download.png)
 
 ---
 
